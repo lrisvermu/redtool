@@ -1,0 +1,5 @@
+红队操作|+++|heapdump查询|***|1 select * from java.util.Hashtable$Entry x WHERE (toString(x.key).contains(“password”))2 select * from java.util.LinkedHashMap$Entry x WHERE (toString(x.key).contains(“password”))
+红队操作|+++|Xray代理语句|***|xray_windows_amd64.exe ws --listen 127.0.0.1:7777 --html-output prox2.html
+红队操作|+++|Rad代理语句|***|rad_windows_amd64.exe -t http://****.com -http-proxy 127.0.0.1:7777
+SQL语句|+++|MYSQL所有表内容|***|SELECT table_name,table_rows,table_comment,table_schema,update_time FROM information_schema.tables;
+Excel语句|+++|身份证判断男女|***|=IF(MOD (MID (B2,17,1),2),"男","女")
